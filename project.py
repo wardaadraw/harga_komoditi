@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 import plotly.express as px
 
 # Konfigurasi Database
-DATABASE_URL = "mysql+pymysql://root:01234@localhost/pangan"
+DATABASE_URL = "mysql+pymysql://root:01234@localhost 2/pangan"
 engine = sqlalchemy.create_engine(DATABASE_URL)
 
 # Fungsi untuk menjalankan query
