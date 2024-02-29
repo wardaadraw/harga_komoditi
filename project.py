@@ -7,12 +7,13 @@ import plotly.express as px
 
 # Konfigurasi Database
 DATABASE_URL = "mysql+pymysql://root:01234@localhost/pangan"
-engine = create_engine(DATABASE_URL)
+engine = sqlalchemy.create_engine(DATABASE_URL)
 
 # Fungsi untuk menjalankan query
 def run_query(query):
     with engine.connect() as conn:
         return pd.read_sql(query, conn)
+
 st.set_page_config(layout='wide')
 # Judul dan Pengantar
 st.title("Pasar Pangan Indonesia: Antara Keberagaman dan Fluktuasi Harga")
