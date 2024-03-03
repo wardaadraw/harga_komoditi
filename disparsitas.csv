@@ -1,0 +1,511 @@
+﻿,Tahun,Provinsi,jenis_pangan,rata2_harga
+0,2019,Aceh,Beras,10225
+1,2019,Sumatera Utara,Beras,11045.8333
+2,2019,Sumatera Barat,Beras,13762.5
+3,2019,Riau,Beras,12350
+4,2019,Kepulauan Riau,Beras,13300
+5,2019,Jambi,Beras,12116.6667
+6,2019,Bengkulu,Beras,11979.1667
+7,2019,Sumatera Selatan,Beras,11441.6667
+8,2019,Kepulauan Bangka Belitung,Beras,11745.8333
+9,2019,Lampung,Beras,11341.6667
+10,2019,Banten,Beras,11691.6667
+11,2019,Jawa Barat,Beras,11208.3333
+12,2019,DKI Jakarta,Beras,12670.8333
+13,2019,Jawa Tengah,Beras,10683.3333
+14,2019,DI Yogyakarta,Beras,11441.6667
+15,2019,Jawa Timur,Beras,10666.6667
+16,2019,Bali,Beras,11233.3333
+17,2019,Nusa Tenggara Barat,Beras,9983.3333
+18,2019,Nusa Tenggara Timur,Beras,11533.3333
+19,2019,Kalimantan Barat,Beras,13187.5
+20,2019,Kalimantan Selatan,Beras,12662.5
+21,2019,Kalimantan Tengah,Beras,13400
+22,2019,Kalimantan Timur,Beras,12620.8333
+23,2019,Kalimantan Utara,Beras,13354.1667
+24,2019,Gorontalo,Beras,10733.3333
+25,2019,Sulawesi Selatan,Beras,9979.1667
+26,2019,Sulawesi Tenggara,Beras,10575
+27,2019,Sulawesi Tengah,Beras,10833.3333
+28,2019,Sulawesi Utara,Beras,11241.6667
+29,2019,Sulawesi Barat,Beras,10008.3333
+30,2019,Maluku,Beras,12925
+31,2019,Maluku Utara,Beras,13112.5
+32,2019,Papua,Beras,12370.8333
+33,2019,Papua Barat,Beras,12420.8333
+34,2019,Aceh,Gula,14450
+35,2019,Sumatera Utara,Gula,13408.3333
+36,2019,Sumatera Barat,Gula,14504.1667
+37,2019,Riau,Gula,12387.5
+38,2019,Kepulauan Riau,Gula,11808.3333
+39,2019,Jambi,Gula,13225
+40,2019,Bengkulu,Gula,12687.5
+41,2019,Sumatera Selatan,Gula,12791.6667
+42,2019,Kepulauan Bangka Belitung,Gula,12466.6667
+43,2019,Lampung,Gula,12820.8333
+44,2019,Banten,Gula,13308.3333
+45,2019,Jawa Barat,Gula,13112.5
+46,2019,DKI Jakarta,Gula,13962.5
+47,2019,Jawa Tengah,Gula,13033.3333
+48,2019,DI Yogyakarta,Gula,12687.5
+49,2019,Jawa Timur,Gula,12425
+50,2019,Bali,Gula,13320.8333
+51,2019,Nusa Tenggara Barat,Gula,13429.1667
+52,2019,Nusa Tenggara Timur,Gula,14525
+53,2019,Kalimantan Barat,Gula,12337.5
+54,2019,Kalimantan Selatan,Gula,13741.6667
+55,2019,Kalimantan Tengah,Gula,14350
+56,2019,Kalimantan Timur,Gula,13908.3333
+57,2019,Kalimantan Utara,Gula,13604.1667
+58,2019,Gorontalo,Gula,13891.6667
+59,2019,Sulawesi Selatan,Gula,13491.6667
+60,2019,Sulawesi Tenggara,Gula,14641.6667
+61,2019,Sulawesi Tengah,Gula,14379.1667
+62,2019,Sulawesi Utara,Gula,12895.8333
+63,2019,Sulawesi Barat,Gula,13108.3333
+64,2019,Maluku,Gula,15195.8333
+65,2019,Maluku Utara,Gula,14316.6667
+66,2019,Papua,Gula,16054.1667
+67,2019,Papua Barat,Gula,15062.5
+68,2019,Aceh,Telur,23445.8333
+69,2019,Sumatera Utara,Telur,21204.1667
+70,2019,Sumatera Barat,Telur,22650
+71,2019,Riau,Telur,22308.3333
+72,2019,Kepulauan Riau,Telur,23520.8333
+73,2019,Jambi,Telur,20783.3333
+74,2019,Bengkulu,Telur,22108.3333
+75,2019,Sumatera Selatan,Telur,21800
+76,2019,Kepulauan Bangka Belitung,Telur,25750
+77,2019,Lampung,Telur,22520.8333
+78,2019,Banten,Telur,24433.3333
+79,2019,Jawa Barat,Telur,23366.6667
+80,2019,DKI Jakarta,Telur,23895.8333
+81,2019,Jawa Tengah,Telur,22595.8333
+82,2019,DI Yogyakarta,Telur,23020.8333
+83,2019,Jawa Timur,Telur,21770.8333
+84,2019,Bali,Telur,21925
+85,2019,Nusa Tenggara Barat,Telur,24212.5
+86,2019,Nusa Tenggara Timur,Telur,27158.3333
+87,2019,Kalimantan Barat,Telur,23975
+88,2019,Kalimantan Selatan,Telur,24137.5
+89,2019,Kalimantan Tengah,Telur,26995.8333
+90,2019,Kalimantan Timur,Telur,24216.6667
+91,2019,Kalimantan Utara,Telur,28562.5
+92,2019,Gorontalo,Telur,27445.8333
+93,2019,Sulawesi Selatan,Telur,21641.6667
+94,2019,Sulawesi Tenggara,Telur,24041.6667
+95,2019,Sulawesi Tengah,Telur,25558.3333
+96,2019,Sulawesi Utara,Telur,24766.6667
+97,2019,Sulawesi Barat,Telur,20116.6667
+98,2019,Maluku,Telur,32462.5
+99,2019,Maluku Utara,Telur,35408.3333
+100,2019,Papua,Telur,35608.3333
+101,2019,Papua Barat,Telur,29629.1667
+102,2020,Aceh,Beras,10262.5
+103,2020,Sumatera Utara,Beras,10995.8333
+104,2020,Sumatera Barat,Beras,13645.8333
+105,2020,Riau,Beras,12370.8333
+106,2020,Kepulauan Riau,Beras,13304.1667
+107,2020,Jambi,Beras,11887.5
+108,2020,Bengkulu,Beras,11745.8333
+109,2020,Sumatera Selatan,Beras,11545.8333
+110,2020,Kepulauan Bangka Belitung,Beras,11920.8333
+111,2020,Lampung,Beras,11375
+112,2020,Banten,Beras,11541.6667
+113,2020,Jawa Barat,Beras,11325
+114,2020,DKI Jakarta,Beras,13358.3333
+115,2020,Jawa Tengah,Beras,10975
+116,2020,DI Yogyakarta,Beras,11400
+117,2020,Jawa Timur,Beras,10612.5
+118,2020,Bali,Beras,11620.8333
+119,2020,Nusa Tenggara Barat,Beras,9870.8333
+120,2020,Nusa Tenggara Timur,Beras,11679.1667
+121,2020,Kalimantan Barat,Beras,13237.5
+122,2020,Kalimantan Selatan,Beras,13045.8333
+123,2020,Kalimantan Tengah,Beras,14025
+124,2020,Kalimantan Timur,Beras,12425
+125,2020,Kalimantan Utara,Beras,13400
+126,2020,Gorontalo,Beras,10954.1667
+127,2020,Sulawesi Selatan,Beras,9991.6667
+128,2020,Sulawesi Tenggara,Beras,10825
+129,2020,Sulawesi Tengah,Beras,11116.6667
+130,2020,Sulawesi Utara,Beras,11325
+131,2020,Sulawesi Barat,Beras,9908.3333
+132,2020,Maluku,Beras,13091.6667
+133,2020,Maluku Utara,Beras,12870.8333
+134,2020,Papua,Beras,12091.6667
+135,2020,Papua Barat,Beras,12679.1667
+136,2020,Aceh,Gula,15904.1667
+137,2020,Sumatera Utara,Gula,15312.5
+138,2020,Sumatera Barat,Gula,15545.8333
+139,2020,Riau,Gula,14212.5
+140,2020,Kepulauan Riau,Gula,11962.5
+141,2020,Jambi,Gula,14216.6667
+142,2020,Bengkulu,Gula,14562.5
+143,2020,Sumatera Selatan,Gula,14533.3333
+144,2020,Kepulauan Bangka Belitung,Gula,14420.8333
+145,2020,Lampung,Gula,14287.5
+146,2020,Banten,Gula,15495.8333
+147,2020,Jawa Barat,Gula,14925
+148,2020,DKI Jakarta,Gula,16145.8333
+149,2020,Jawa Tengah,Gula,14825
+150,2020,DI Yogyakarta,Gula,14095.8333
+151,2020,Jawa Timur,Gula,14395.8333
+152,2020,Bali,Gula,14479.1667
+153,2020,Nusa Tenggara Barat,Gula,14725
+154,2020,Nusa Tenggara Timur,Gula,17275
+155,2020,Kalimantan Barat,Gula,15350
+156,2020,Kalimantan Selatan,Gula,15883.3333
+157,2020,Kalimantan Tengah,Gula,15970.8333
+158,2020,Kalimantan Timur,Gula,15125
+159,2020,Kalimantan Utara,Gula,15800
+160,2020,Gorontalo,Gula,16620.8333
+161,2020,Sulawesi Selatan,Gula,15387.5
+162,2020,Sulawesi Tenggara,Gula,17350
+163,2020,Sulawesi Tengah,Gula,16012.5
+164,2020,Sulawesi Utara,Gula,14670.8333
+165,2020,Sulawesi Barat,Gula,14529.1667
+166,2020,Maluku,Gula,17612.5
+167,2020,Maluku Utara,Gula,16462.5
+168,2020,Papua,Gula,17845.8333
+169,2020,Papua Barat,Gula,16791.6667
+170,2020,Aceh,Telur,24395.8333
+171,2020,Sumatera Utara,Telur,22629.1667
+172,2020,Sumatera Barat,Telur,23425
+173,2020,Riau,Telur,23170.8333
+174,2020,Kepulauan Riau,Telur,24041.6667
+175,2020,Jambi,Telur,21508.3333
+176,2020,Bengkulu,Telur,23400
+177,2020,Sumatera Selatan,Telur,22641.6667
+178,2020,Kepulauan Bangka Belitung,Telur,25187.5
+179,2020,Lampung,Telur,23233.3333
+180,2020,Banten,Telur,24312.5
+181,2020,Jawa Barat,Telur,23866.6667
+182,2020,DKI Jakarta,Telur,24500
+183,2020,Jawa Tengah,Telur,22725
+184,2020,DI Yogyakarta,Telur,23291.6667
+185,2020,Jawa Timur,Telur,22295.8333
+186,2020,Bali,Telur,22725
+187,2020,Nusa Tenggara Barat,Telur,24983.3333
+188,2020,Nusa Tenggara Timur,Telur,28883.3333
+189,2020,Kalimantan Barat,Telur,26050
+190,2020,Kalimantan Selatan,Telur,25095.8333
+191,2020,Kalimantan Tengah,Telur,28187.5
+192,2020,Kalimantan Timur,Telur,24620.8333
+193,2020,Kalimantan Utara,Telur,29729.1667
+194,2020,Gorontalo,Telur,28983.3333
+195,2020,Sulawesi Selatan,Telur,21400
+196,2020,Sulawesi Tenggara,Telur,24466.6667
+197,2020,Sulawesi Tengah,Telur,25891.6667
+198,2020,Sulawesi Utara,Telur,24066.6667
+199,2020,Sulawesi Barat,Telur,20362.5
+200,2020,Maluku,Telur,31233.3333
+201,2020,Maluku Utara,Telur,34804.1667
+202,2020,Papua,Telur,38875
+203,2020,Papua Barat,Telur,28962.5
+204,2021,Aceh,Beras,9291.6667
+205,2021,Sumatera Utara,Beras,10191.6667
+206,2021,Sumatera Barat,Beras,12320.8333
+207,2021,Riau,Beras,11237.5
+208,2021,Kepulauan Riau,Beras,12158.3333
+209,2021,Jambi,Beras,10816.6667
+210,2021,Bengkulu,Beras,10445.8333
+211,2021,Sumatera Selatan,Beras,9450
+212,2021,Kepulauan Bangka Belitung,Beras,10600
+213,2021,Lampung,Beras,10208.3333
+214,2021,Banten,Beras,10150
+215,2021,Jawa Barat,Beras,10245.8333
+216,2021,DKI Jakarta,Beras,12237.5
+217,2021,Jawa Tengah,Beras,9925
+218,2021,DI Yogyakarta,Beras,10300
+219,2021,Jawa Timur,Beras,9437.5
+220,2021,Bali,Beras,10229.1667
+221,2021,Nusa Tenggara Barat,Beras,8879.1667
+222,2021,Nusa Tenggara Timur,Beras,10391.6667
+223,2021,Kalimantan Barat,Beras,13229.1667
+224,2021,Kalimantan Selatan,Beras,12083.3333
+225,2021,Kalimantan Tengah,Beras,12891.6667
+226,2021,Kalimantan Timur,Beras,11241.6667
+227,2021,Kalimantan Utara,Beras,12483.3333
+228,2021,Gorontalo,Beras,9991.6667
+229,2021,Sulawesi Selatan,Beras,9045.8333
+230,2021,Sulawesi Tenggara,Beras,9991.6667
+231,2021,Sulawesi Tengah,Beras,9991.6667
+232,2021,Sulawesi Utara,Beras,10375
+233,2021,Sulawesi Barat,Beras,8941.6667
+234,2021,Maluku,Beras,12066.6667
+235,2021,Maluku Utara,Beras,11629.1667
+236,2021,Papua,Beras,11095.8333
+237,2021,Papua Barat,Beras,11916.6667
+238,2021,Aceh,Gula,13570.8333
+239,2021,Sumatera Utara,Gula,13175
+240,2021,Sumatera Barat,Gula,13158.3333
+241,2021,Riau,Gula,11800
+242,2021,Kepulauan Riau,Gula,10891.6667
+243,2021,Jambi,Gula,12437.5
+244,2021,Bengkulu,Gula,12150
+245,2021,Sumatera Selatan,Gula,11195.8333
+246,2021,Kepulauan Bangka Belitung,Gula,12454.1667
+247,2021,Lampung,Gula,12137.5
+248,2021,Banten,Gula,12791.6667
+249,2021,Jawa Barat,Gula,12625
+250,2021,DKI Jakarta,Gula,13350
+251,2021,Jawa Tengah,Gula,12287.5
+252,2021,DI Yogyakarta,Gula,12029.1667
+253,2021,Jawa Timur,Gula,11800
+254,2021,Bali,Gula,12250
+255,2021,Nusa Tenggara Barat,Gula,12695.8333
+256,2021,Nusa Tenggara Timur,Gula,14387.5
+257,2021,Kalimantan Barat,Gula,14041.6667
+258,2021,Kalimantan Selatan,Gula,13379.1667
+259,2021,Kalimantan Tengah,Gula,13308.3333
+260,2021,Kalimantan Timur,Gula,12854.1667
+261,2021,Kalimantan Utara,Gula,12891.6667
+262,2021,Gorontalo,Gula,13508.3333
+263,2021,Sulawesi Selatan,Gula,12912.5
+264,2021,Sulawesi Tenggara,Gula,14562.5
+265,2021,Sulawesi Tengah,Gula,13900
+266,2021,Sulawesi Utara,Gula,12483.3333
+267,2021,Sulawesi Barat,Gula,12495.8333
+268,2021,Maluku,Gula,14354.1667
+269,2021,Maluku Utara,Gula,14054.1667
+270,2021,Papua,Gula,15337.5
+271,2021,Papua Barat,Gula,14783.3333
+272,2021,Aceh,Telur,22608.3333
+273,2021,Sumatera Utara,Telur,22870.8333
+274,2021,Sumatera Barat,Telur,22220.8333
+275,2021,Riau,Telur,21466.6667
+276,2021,Kepulauan Riau,Telur,22916.6667
+277,2021,Jambi,Telur,20145.8333
+278,2021,Bengkulu,Telur,21908.3333
+279,2021,Sumatera Selatan,Telur,18983.3333
+280,2021,Kepulauan Bangka Belitung,Telur,23612.5
+281,2021,Lampung,Telur,20970.8333
+282,2021,Banten,Telur,20816.6667
+283,2021,Jawa Barat,Telur,20833.3333
+284,2021,DKI Jakarta,Telur,21129.1667
+285,2021,Jawa Tengah,Telur,19800
+286,2021,DI Yogyakarta,Telur,20141.6667
+287,2021,Jawa Timur,Telur,19650
+288,2021,Bali,Telur,21016.6667
+289,2021,Nusa Tenggara Barat,Telur,22466.6667
+290,2021,Nusa Tenggara Timur,Telur,25920.8333
+291,2021,Kalimantan Barat,Telur,28212.5
+292,2021,Kalimantan Selatan,Telur,22466.6667
+293,2021,Kalimantan Tengah,Telur,25454.1667
+294,2021,Kalimantan Timur,Telur,23004.1667
+295,2021,Kalimantan Utara,Telur,25970.8333
+296,2021,Gorontalo,Telur,26929.1667
+297,2021,Sulawesi Selatan,Telur,19616.6667
+298,2021,Sulawesi Tenggara,Telur,22870.8333
+299,2021,Sulawesi Tengah,Telur,23470.8333
+300,2021,Sulawesi Utara,Telur,23175
+301,2021,Sulawesi Barat,Telur,19158.3333
+302,2021,Maluku,Telur,28341.6667
+303,2021,Maluku Utara,Telur,31112.5
+304,2021,Papua,Telur,34779.1667
+305,2021,Papua Barat,Telur,26995.8333
+306,2022,Aceh,Beras,10595.4545
+307,2022,Sumatera Utara,Beras,11372.7273
+308,2022,Sumatera Barat,Beras,13740.9091
+309,2022,Riau,Beras,12763.6364
+310,2022,Kepulauan Riau,Beras,13063.6364
+311,2022,Jambi,Beras,12090.9091
+312,2022,Bengkulu,Beras,11609.0909
+313,2022,Sumatera Selatan,Beras,11636.3636
+314,2022,Kepulauan Bangka Belitung,Beras,11731.8182
+315,2022,Lampung,Beras,11445.4545
+316,2022,Banten,Beras,11550
+317,2022,Jawa Barat,Beras,11440.9091
+318,2022,DKI Jakarta,Beras,13577.2727
+319,2022,Jawa Tengah,Beras,11109.0909
+320,2022,DI Yogyakarta,Beras,11331.8182
+321,2022,Jawa Timur,Beras,10750
+322,2022,Bali,Beras,11459.0909
+323,2022,Nusa Tenggara Barat,Beras,9700
+324,2022,Nusa Tenggara Timur,Beras,11436.3636
+325,2022,Kalimantan Barat,Beras,13359.0909
+326,2022,Kalimantan Selatan,Beras,13436.3636
+327,2022,Kalimantan Tengah,Beras,14486.3636
+328,2022,Kalimantan Timur,Beras,12400
+329,2022,Kalimantan Utara,Beras,13500
+330,2022,Gorontalo,Beras,11104.5455
+331,2022,Sulawesi Selatan,Beras,10031.8182
+332,2022,Sulawesi Tenggara,Beras,11036.3636
+333,2022,Sulawesi Tengah,Beras,10659.0909
+334,2022,Sulawesi Utara,Beras,11404.5455
+335,2022,Sulawesi Barat,Beras,9863.6364
+336,2022,Maluku,Beras,13168.1818
+337,2022,Maluku Utara,Beras,12650
+338,2022,Papua,Beras,12300
+339,2022,Papua Barat,Beras,13177.2727
+340,2022,Aceh,Gula,15327.2727
+341,2022,Sumatera Utara,Gula,15036.3636
+342,2022,Sumatera Barat,Gula,14781.8182
+343,2022,Riau,Gula,13863.6364
+344,2022,Kepulauan Riau,Gula,13140.9091
+345,2022,Jambi,Gula,14050
+346,2022,Bengkulu,Gula,14336.3636
+347,2022,Sumatera Selatan,Gula,14400
+348,2022,Kepulauan Bangka Belitung,Gula,14322.7273
+349,2022,Lampung,Gula,14081.8182
+350,2022,Banten,Gula,14713.6364
+351,2022,Jawa Barat,Gula,14600
+352,2022,DKI Jakarta,Gula,15022.7273
+353,2022,Jawa Tengah,Gula,14377.2727
+354,2022,DI Yogyakarta,Gula,14450
+355,2022,Jawa Timur,Gula,13818.1818
+356,2022,Bali,Gula,13990.9091
+357,2022,Nusa Tenggara Barat,Gula,14527.2727
+358,2022,Nusa Tenggara Timur,Gula,15768.1818
+359,2022,Kalimantan Barat,Gula,14536.3636
+360,2022,Kalimantan Selatan,Gula,15531.8182
+361,2022,Kalimantan Tengah,Gula,15695.4545
+362,2022,Kalimantan Timur,Gula,15463.6364
+363,2022,Kalimantan Utara,Gula,15686.3636
+364,2022,Gorontalo,Gula,15481.8182
+365,2022,Sulawesi Selatan,Gula,14813.6364
+366,2022,Sulawesi Tenggara,Gula,16381.8182
+367,2022,Sulawesi Tengah,Gula,15827.2727
+368,2022,Sulawesi Utara,Gula,14954.5455
+369,2022,Sulawesi Barat,Gula,13659.0909
+370,2022,Maluku,Gula,16536.3636
+371,2022,Maluku Utara,Gula,15831.8182
+372,2022,Papua,Gula,17281.8182
+373,2022,Papua Barat,Gula,17536.3636
+374,2022,Aceh,Telur,27609.0909
+375,2022,Sumatera Utara,Telur,28054.5455
+376,2022,Sumatera Barat,Telur,26363.6364
+377,2022,Riau,Telur,26313.6364
+378,2022,Kepulauan Riau,Telur,27572.7273
+379,2022,Jambi,Telur,24959.0909
+380,2022,Bengkulu,Telur,26368.1818
+381,2022,Sumatera Selatan,Telur,25754.5455
+382,2022,Kepulauan Bangka Belitung,Telur,27804.5455
+383,2022,Lampung,Telur,25868.1818
+384,2022,Banten,Telur,26431.8182
+385,2022,Jawa Barat,Telur,26550
+386,2022,DKI Jakarta,Telur,26859.0909
+387,2022,Jawa Tengah,Telur,25568.1818
+388,2022,DI Yogyakarta,Telur,26045.4545
+389,2022,Jawa Timur,Telur,25159.0909
+390,2022,Bali,Telur,24800
+391,2022,Nusa Tenggara Barat,Telur,27954.5455
+392,2022,Nusa Tenggara Timur,Telur,31672.7273
+393,2022,Kalimantan Barat,Telur,28736.3636
+394,2022,Kalimantan Selatan,Telur,28245.4545
+395,2022,Kalimantan Tengah,Telur,29031.8182
+396,2022,Kalimantan Timur,Telur,28640.9091
+397,2022,Kalimantan Utara,Telur,30377.2727
+398,2022,Gorontalo,Telur,30472.7273
+399,2022,Sulawesi Selatan,Telur,23822.7273
+400,2022,Sulawesi Tenggara,Telur,28995.4545
+401,2022,Sulawesi Tengah,Telur,28277.2727
+402,2022,Sulawesi Utara,Telur,26868.1818
+403,2022,Sulawesi Barat,Telur,23881.8182
+404,2022,Maluku,Telur,36945.4545
+405,2022,Maluku Utara,Telur,34459.0909
+406,2022,Papua,Telur,39854.5455
+407,2022,Papua Barat,Telur,34013.6364
+408,2023,Aceh,Beras,12218.1818
+409,2023,Sumatera Utara,Beras,12713.6364
+410,2023,Sumatera Barat,Beras,15186.3636
+411,2023,Riau,Beras,14404.5455
+412,2023,Kepulauan Riau,Beras,13481.8182
+413,2023,Jambi,Beras,11990.9091
+414,2023,Bengkulu,Beras,13309.0909
+415,2023,Sumatera Selatan,Beras,13300
+416,2023,Kepulauan Bangka Belitung,Beras,13186.3636
+417,2023,Lampung,Beras,12572.7273
+418,2023,Banten,Beras,13318.1818
+419,2023,Jawa Barat,Beras,12704.5455
+420,2023,DKI Jakarta,Beras,14595.4545
+421,2023,Jawa Tengah,Beras,12786.3636
+422,2023,DI Yogyakarta,Beras,13122.7273
+423,2023,Jawa Timur,Beras,12413.6364
+424,2023,Bali,Beras,13163.6364
+425,2023,Nusa Tenggara Barat,Beras,11381.8182
+426,2023,Nusa Tenggara Timur,Beras,13809.0909
+427,2023,Kalimantan Barat,Beras,14413.6364
+428,2023,Kalimantan Selatan,Beras,16331.8182
+429,2023,Kalimantan Tengah,Beras,17840.9091
+430,2023,Kalimantan Timur,Beras,12800
+431,2023,Kalimantan Utara,Beras,14700
+432,2023,Gorontalo,Beras,13322.7273
+433,2023,Sulawesi Selatan,Beras,11759.0909
+434,2023,Sulawesi Tenggara,Beras,12809.0909
+435,2023,Sulawesi Tengah,Beras,12886.3636
+436,2023,Sulawesi Utara,Beras,12850
+437,2023,Sulawesi Barat,Beras,11822.7273
+438,2023,Maluku,Beras,14336.3636
+439,2023,Maluku Utara,Beras,14486.3636
+440,2023,Papua,Beras,14159.0909
+441,2023,Papua Barat,Beras,14259.0909
+442,2023,Aceh,Gula,15572.7273
+443,2023,Sumatera Utara,Gula,15500
+444,2023,Sumatera Barat,Gula,15177.2727
+445,2023,Riau,Gula,14422.7273
+446,2023,Kepulauan Riau,Gula,14436.3636
+447,2023,Jambi,Gula,13331.8182
+448,2023,Bengkulu,Gula,14913.6364
+449,2023,Sumatera Selatan,Gula,14922.7273
+450,2023,Kepulauan Bangka Belitung,Gula,14690.9091
+451,2023,Lampung,Gula,14509.0909
+452,2023,Banten,Gula,15572.7273
+453,2023,Jawa Barat,Gula,15045.4545
+454,2023,DKI Jakarta,Gula,15486.3636
+455,2023,Jawa Tengah,Gula,14895.4545
+456,2023,DI Yogyakarta,Gula,14550
+457,2023,Jawa Timur,Gula,14240.9091
+458,2023,Bali,Gula,14631.8182
+459,2023,Nusa Tenggara Barat,Gula,14890.9091
+460,2023,Nusa Tenggara Timur,Gula,16086.3636
+461,2023,Kalimantan Barat,Gula,15027.2727
+462,2023,Kalimantan Selatan,Gula,15531.8182
+463,2023,Kalimantan Tengah,Gula,16350
+464,2023,Kalimantan Timur,Gula,14381.8182
+465,2023,Kalimantan Utara,Gula,16013.6364
+466,2023,Gorontalo,Gula,15895.4545
+467,2023,Sulawesi Selatan,Gula,14972.7273
+468,2023,Sulawesi Tenggara,Gula,16577.2727
+469,2023,Sulawesi Tengah,Gula,16763.6364
+470,2023,Sulawesi Utara,Gula,15372.7273
+471,2023,Sulawesi Barat,Gula,13886.3636
+472,2023,Maluku,Gula,16713.6364
+473,2023,Maluku Utara,Gula,15250
+474,2023,Papua,Gula,17431.8182
+475,2023,Papua Barat,Gula,17650
+476,2023,Aceh,Telur,29931.8182
+477,2023,Sumatera Utara,Telur,30250
+478,2023,Sumatera Barat,Telur,28054.5455
+479,2023,Riau,Telur,28727.2727
+480,2023,Kepulauan Riau,Telur,28209.0909
+481,2023,Jambi,Telur,24700
+482,2023,Bengkulu,Telur,28413.6364
+483,2023,Sumatera Selatan,Telur,28022.7273
+484,2023,Kepulauan Bangka Belitung,Telur,31981.8182
+485,2023,Lampung,Telur,27327.2727
+486,2023,Banten,Telur,28272.7273
+487,2023,Jawa Barat,Telur,28513.6364
+488,2023,DKI Jakarta,Telur,28727.2727
+489,2023,Jawa Tengah,Telur,27209.0909
+490,2023,DI Yogyakarta,Telur,28004.5455
+491,2023,Jawa Timur,Telur,27190.9091
+492,2023,Bali,Telur,27854.5455
+493,2023,Nusa Tenggara Barat,Telur,31286.3636
+494,2023,Nusa Tenggara Timur,Telur,33463.6364
+495,2023,Kalimantan Barat,Telur,31609.0909
+496,2023,Kalimantan Selatan,Telur,30613.6364
+497,2023,Kalimantan Tengah,Telur,32145.4545
+498,2023,Kalimantan Timur,Telur,27886.3636
+499,2023,Kalimantan Utara,Telur,32209.0909
+500,2023,Gorontalo,Telur,32300
+501,2023,Sulawesi Selatan,Telur,25845.4545
+502,2023,Sulawesi Tenggara,Telur,31272.7273
+503,2023,Sulawesi Tengah,Telur,30250
+504,2023,Sulawesi Utara,Telur,28481.8182
+505,2023,Sulawesi Barat,Telur,26736.3636
+506,2023,Maluku,Telur,37986.3636
+507,2023,Maluku Utara,Telur,34772.7273
+508,2023,Papua,Telur,37309.0909
+509,2023,Papua Barat,Telur,36486.3636
