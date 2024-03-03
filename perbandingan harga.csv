@@ -1,0 +1,61 @@
+﻿,Tahun,Provinsi,jenis_pangan,rata2_harga,status_harga
+0,2019,Bali,Beras,11233.3333,
+1,2019,DKI Jakarta,Beras,12670.8333,Tertinggi
+2,2019,Jawa Timur,Beras,10666.6667,Terendah
+3,2019,Papua,Beras,12370.8333,
+4,2019,Bali,Gula,13320.8333,
+5,2019,DKI Jakarta,Gula,13962.5,
+6,2019,Jawa Timur,Gula,12425,Terendah
+7,2019,Papua,Gula,16054.1667,Tertinggi
+8,2019,Bali,Telur,21925,
+9,2019,DKI Jakarta,Telur,23895.8333,
+10,2019,Jawa Timur,Telur,21770.8333,Terendah
+11,2019,Papua,Telur,35608.3333,Tertinggi
+12,2020,Bali,Beras,11620.8333,
+13,2020,DKI Jakarta,Beras,13358.3333,Tertinggi
+14,2020,Jawa Timur,Beras,10612.5,Terendah
+15,2020,Papua,Beras,12091.6667,
+16,2020,Bali,Gula,14479.1667,
+17,2020,DKI Jakarta,Gula,16145.8333,
+18,2020,Jawa Timur,Gula,14395.8333,Terendah
+19,2020,Papua,Gula,17845.8333,Tertinggi
+20,2020,Bali,Telur,22725,
+21,2020,DKI Jakarta,Telur,24500,
+22,2020,Jawa Timur,Telur,22295.8333,Terendah
+23,2020,Papua,Telur,38875,Tertinggi
+24,2021,Bali,Beras,10229.1667,
+25,2021,DKI Jakarta,Beras,12237.5,Tertinggi
+26,2021,Jawa Timur,Beras,9437.5,Terendah
+27,2021,Papua,Beras,11095.8333,
+28,2021,Bali,Gula,12250,
+29,2021,DKI Jakarta,Gula,13350,
+30,2021,Jawa Timur,Gula,11800,Terendah
+31,2021,Papua,Gula,15337.5,Tertinggi
+32,2021,Bali,Telur,21016.6667,
+33,2021,DKI Jakarta,Telur,21129.1667,
+34,2021,Jawa Timur,Telur,19650,Terendah
+35,2021,Papua,Telur,34779.1667,Tertinggi
+36,2022,Bali,Beras,11459.0909,
+37,2022,DKI Jakarta,Beras,13577.2727,Tertinggi
+38,2022,Jawa Timur,Beras,10750,Terendah
+39,2022,Papua,Beras,12300,
+40,2022,Bali,Gula,13990.9091,
+41,2022,DKI Jakarta,Gula,15022.7273,
+42,2022,Jawa Timur,Gula,13818.1818,Terendah
+43,2022,Papua,Gula,17281.8182,Tertinggi
+44,2022,Bali,Telur,24800,Terendah
+45,2022,DKI Jakarta,Telur,26859.0909,
+46,2022,Jawa Timur,Telur,25159.0909,
+47,2022,Papua,Telur,39854.5455,Tertinggi
+48,2023,Bali,Beras,13163.6364,
+49,2023,DKI Jakarta,Beras,14595.4545,Tertinggi
+50,2023,Jawa Timur,Beras,12413.6364,Terendah
+51,2023,Papua,Beras,14159.0909,
+52,2023,Bali,Gula,14631.8182,
+53,2023,DKI Jakarta,Gula,15486.3636,
+54,2023,Jawa Timur,Gula,14240.9091,Terendah
+55,2023,Papua,Gula,17431.8182,Tertinggi
+56,2023,Bali,Telur,27854.5455,
+57,2023,DKI Jakarta,Telur,28727.2727,
+58,2023,Jawa Timur,Telur,27190.9091,Terendah
+59,2023,Papua,Telur,37309.0909,Tertinggi
