@@ -34,27 +34,67 @@ if analysis == "__Disparitas Harga Nasional__":
 
     st.subheader("Disparitas Harga Nasional")
     st.write("""
-    Dalam analisis pertama kita, kita akan menyusuri peta Indonesia, mengeksplorasi bagaimana harga beras, telur, dan gula berfluktuasi antar provinsi dari tahun 2019 hingga 2023. Kita melakukan ini untuk mengungkap bagaimana geografi, logistik, dan kebijakan lokal mempengaruhi harga pangan, memberikan kita wawasan tentang tantangan dan peluang dalam pemerataan akses pangan.
+    Dalam analisis pertama kita, kita akan menyusuri peta Indonesia, mengeksplorasi bagaimana harga beras, telur, dan gula 
+    berfluktuasi antar provinsi dari tahun 2019 hingga 2023. Kita melakukan ini untuk mengungkap bagaimana geografi, 
+    logistik, dan kebijakan lokal mempengaruhi harga pangan, memberikan kita wawasan tentang tantangan dan peluang 
+    dalam pemerataan akses pangan. Pemilihan ketiga jenis pangan tersebut dikarenakan :
+    1. Beras : menjadi pokok kebutuhan sehari-hari'
+    2. Telur : bahasn pangan serba guna
+    3. Gula  : pemanis kehidupan 
     """)
 
-    #Dropdown pemilihan tahun
+    #Membuat pemetaan wilayah waktu untuk setiap provinsi
+    wilayah_mapping = {
+        "Indonesia Barat": ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Jambi", "Sumatera Selatan", "Bengkulu", "Lampung", "Kepulauan Bangka Belitung", "Kepulauan Riau", "DKI Jakarta", "Jawa Barat", "Jawa Tengah", "DI Yogyakarta", "Jawa Timur", "Banten"],
+        "Indonesia Tengah": ["Kalimantan Barat", "Kalimantan Tengah", "Kalimantan Selatan", "Kalimantan Timur", "Sulawesi Utara", "Sulawesi Tengah", "Sulawesi Selatan", "Sulawesi Tenggara", "Bali", "Nusa Tenggara Barat", "Nusa Tenggara Timur"],
+        "Indonesia Timur": ["Maluku", "Maluku Utara", "Papua", "Papua Barat", "Sulawesi Barat", "Gorontalo", "Kalimantan Utara"]
+    }
+
+    # Fungsi untuk menentukan wilayah berdasarkan provinsi
+    def determine_wilayah(provinsi):
+        for wilayah, provinsis in wilayah_mapping.items():
+            if provinsi in provinsis:
+                return wilayah
+        return "Tidak diketahui"
+
+    # Tambahkan kolom 'Wilayah' ke dataframe
+    data['Wilayah'] = data['Provinsi'].apply(determine_wilayah)
+
+    # Dropdown tahun dan jenis pangan
     tahun = st.sidebar.selectbox('Pilih Tahun', options=sorted(data['Tahun'].unique()))
-    # MultiSelect untuk pemilihan Provinsi
-    provinsi = st.sidebar.multiselect('Pilih Provinsi', options=sorted(data['Provinsi'].unique()), default=sorted(data['Provinsi'].unique()))
-    # Filter data berdasarkan tahun dan provinsi yang dipilih
-    filtered_data = data[(data['Tahun'] == tahun) & (data['Provinsi'].isin(provinsi))]
-    # Membuat visualisasi dengan Plotly
-    fig = px.bar(filtered_data, x='Provinsi', y='rata2_harga', color='Provinsi', 
-                 labels={'rata2_harga': 'Rata-Rata Harga'}, height=400, 
-                 title='Rata-Rata Harga per Provinsi')
+    # Filter data berdasarkan tahun yang dipilih
+    filtered_data = data[data['Tahun'] == tahun]
+    # Dropdown jenis pangan
+    selected_jenis_pangan = st.sidebar.selectbox('Pilih Jenis Pangan:', data['jenis_pangan'].unique().tolist())
+    # Kemudian, ketika menyaring data, tidak akan terjadi error karena 'selected_jenis_pangan' adalah string tunggal
+    filtered_data = filtered_data[filtered_data['jenis_pangan'] == selected_jenis_pangan]
+
+    # Modifikasi untuk menambahkan opsi "Semua"
+    provinsi_options = ["Semua"] + sorted(data['Provinsi'].unique())
+    selected_provinsi = st.sidebar.multiselect('Pilih Provinsi', options=provinsi_options, default="Semua")
+    # Logika pemilihan provinsi (termasuk penanganan untuk pilihan "Semua")
+    if "Semua" in selected_provinsi:
+        # Untuk kasus "Semua", Anda mungkin tidak perlu melakukan perubahan lebih lanjut karena
+        # filtered_data sudah berisi data yang sesuai dengan tahun dan jenis pangan yang dipilih
+        fig = px.bar(filtered_data, x='Provinsi', y='rata2_harga', color='Wilayah', 
+                    labels={'rata2_harga': 'Rata-Rata Harga'}, height=400,
+                    title=f'Rata-Rata Harga {selected_jenis_pangan} per Provinsi')
+    else:
+        # Jika provinsi tertentu dipilih, pastikan data juga disaring berdasarkan pilihan provinsi tersebut
+        filtered_data_specific = filtered_data[filtered_data['Provinsi'].isin(selected_provinsi)]
+        fig = px.bar(filtered_data_specific, x='Provinsi', y='rata2_harga', color='Provinsi',
+                    labels={'rata2_harga': 'Rata-Rata Harga'}, height=400,
+                    title=f'Rata-Rata Harga {selected_jenis_pangan} per Provinsi')
     fig.update_layout(xaxis={'categoryorder':'total descending'})
     st.plotly_chart(fig)
 
+    
     st.write("Data menunjukkan fluktuasi harga beras, gula, dan telur antar provinsi dari 2019-2023, mengindikasikan disparitas harga signifikan. Faktor geografi, logistik, dan kebijakan lokal berperan penting.")
     st.markdown(
     """
-    * Beras relatif stabil tetapi lebih tinggi di daerah terpencil
-    * Gula dan telur menunjukkan kenaikan harga yang lebih signifikan, terutama di provinsi terpencil, dipengaruhi oleh biaya produksi dan distribusi
+    * Harga Beras tertinggi pada 5 tahun terakhir khususnya 2020-2023 berada di Provinsi Kalimantan Tengah dan harga menengah kebawah didominasi wilayah Indonesia Tengah dan Barat khususnya Provinsi Nusa Tenggara Barat yang konsisten memiliki harga terendah.
+    * Harga Gula pada wilayag Indonesia bagian Timur khusunya Provinsi Papua dan Papua Barat secara konsisten menunjukkan harga tertinggi di 5 tahun terakhir, sedangkan harga terendah dimiliki oleh Provinsi Kepulauan Riau dan didominasi oleh wilayah Indonesia bagian Barat.
+    * Harga Telur pada wilayah Indonesia bagian Timur secara konsisten menunjukkan harga tertinggi di 5 tahun terakhir, khususnya Provinsi Papua yang memiliki harga > 30.000 di setiap tahunnya. Sedangkan untuk harga menengah ke bawah, didominasi oleh wilayah Indonesia Barat.
     """
     )
 
@@ -65,35 +105,46 @@ if analysis == "__Harga Pangan di 4 Provinsi__":
 
     st.subheader("Perbandingan Harga di DKI Jakarta, Papua, Bali, dan Provinsi Produksi Utama")
     st.write("""
-    Mengapa harga pangan di Jakarta berbeda dengan di Papua atau Bali? 
+    Mengapa harga pangan di Jakarta berbeda dengan di Jawa Timur, Papua atau Bali? 
     Dalam segmen ini, kita akan membandingkan harga pangan khusus di provinsi-provinsi 
-    ini untuk memahami dinamika pasar dan distribusi pangan di Indonesia. Kita memilih 
-    provinsi-provinsi ini karena perannya yang unik dalam ekonomi dan pola konsumsi pangan nasional, 
-    memberikan kita gambaran yang lebih luas tentang bagaimana pangan diperdagangkan dan dikonsumsi 
-    di seluruh negeri.
+    ini untuk menangkap dinamika produksi dan konsumsi yang beragam serta tantangan logistik yang memberikan
+    gambaran lebih luas tentang bagaimana pangan diperdagangkan dan dikonsumsi seluruh negeri.
+    1. DKI Jakarta dipilih karena umumnya menjadi provinsi dengan konsumsi tertinggi berbagai komoditas akibat karakteristiknya sebagai ibu kota negara dan urban,
+    2. Jawa Timur dipilih dikarenakan merupakan salah satu provinsi pemroduksi terbesar ketiga jenis pangan yang dianalisis (Beras, Gula, Telur),
+    3. Bali dipilih dikarenakan karakteristiknya sebagai provinsi andalan destinasi wisata baik domestik maupun internasional, dan
+    4. Papua dipilih dikarenakan termasuk provinsi yang berat tantangan logistiknya karena dipengaruhi olek karakteristik geografisnya
     """)
+
     # Dropdown untuk pemilihan Tahun dan Jenis Pangan
     year_option = data['Tahun'].unique().tolist()
     jenis_pangan_option = data['jenis_pangan'].unique().tolist()
 
     selected_year = st.sidebar.selectbox('Pilih Tahun:', year_option)
     selected_jenis_pangan = st.sidebar.selectbox('Pilih Jenis Pangan:', jenis_pangan_option)
-    
+
     # Filter dataframe
     filtered_df = data[(data['Tahun'] == selected_year) & 
-                     (data['jenis_pangan'] == selected_jenis_pangan)]
+                    (data['jenis_pangan'] == selected_jenis_pangan)]
 
-    # Membuat line chart dengan Plotly
-    fig = px.line(filtered_df, x='Provinsi', y='rata2_harga', color='Provinsi', 
-                  text='status_harga', title=f'Rata-Rata Harga {selected_jenis_pangan} pada {selected_year}')
-    
-    # Menunjukkan label hanya untuk "Tertinggi" dan "Terendah"
-    fig.for_each_trace(lambda t: t.update(textposition="top center"))
-    fig.update_traces(textposition='top center')
+    # Membuat bar chart dengan Plotly
+    fig = px.bar(filtered_df, x='Provinsi', y='rata2_harga', color='Provinsi', 
+                title=f'Rata-Rata Harga {selected_jenis_pangan} pada {selected_year}')
 
     fig.update_layout(showlegend=True)
     fig.update_xaxes(title_text='Provinsi')
-    fig.update_yaxes(title_text='Rata-Rata Harga')
+    fig.update_yaxes(title_text='Rata-Rata Harga', range=[0, filtered_df['rata2_harga'].max() + (filtered_df['rata2_harga'].max() * 0.1)])
+
+    # Opsi untuk menambahkan teks "Tertinggi" dan "Terendah" menggunakan anotasi (jika diperlukan)
+    # Ini adalah contoh sederhana dan mungkin perlu disesuaikan lebih lanjut sesuai dengan kebutuhan Anda
+    if not filtered_df.empty:
+        max_value = filtered_df['rata2_harga'].max()
+        min_value = filtered_df['rata2_harga'].min()
+
+        max_provinsi = filtered_df[filtered_df['rata2_harga'] == max_value]['Provinsi'].iloc[0]
+        min_provinsi = filtered_df[filtered_df['rata2_harga'] == min_value]['Provinsi'].iloc[0]
+
+        fig.add_annotation(x=max_provinsi, y=max_value, text="Tertinggi", showarrow=True, arrowhead=1)
+        fig.add_annotation(x=min_provinsi, y=min_value, text="Terendah", showarrow=True, arrowhead=1)
 
     # Menampilkan grafik
     st.plotly_chart(fig)
@@ -114,7 +165,7 @@ if analysis == "__Tren Harga Musim Panen__":
             """)
     #Plot 1
     st.subheader("Secara Nasional")
-    data_path = 'pct nasional.csv'
+    data_path = 'pct panen nasional fix.csv'
     data = load_data(data_path)
     # Melakukan pivot data
     data_melted = data.melt(id_vars='Tahun', value_vars=['PctChange_Beras', 'PctChange_Gula', 'PctChange_Telur'],
@@ -140,7 +191,7 @@ if analysis == "__Tren Harga Musim Panen__":
     
     #Plot 2
     st.subheader("Provinsi Tertentu")
-    data_path = 'pct panen provinsi.csv'
+    data_path = 'pct panen provinsi fix.csv'
     data = load_data(data_path)
 
     # Dropdown untuk pemilihan Jenis Pangan
@@ -206,9 +257,9 @@ if analysis == "__Dampak Pandemi__":
     # Load data
     data_path = 'pct pandemi provinsi.csv'
     data = load_data(data_path)
-    # Menambahkan pilihan jenis pangan
+    # Menambahkan pilihan jenis pangan dan provinsi
     jenis_pangan_pilihan = st.selectbox("Pilih Jenis Pangan:", data['jenis_pangan'].unique())
-
+ 
     # Filter dataframe berdasarkan pilihan jenis pangan
     df_filtered = data[data['jenis_pangan'] == jenis_pangan_pilihan]
 
@@ -241,9 +292,11 @@ if analysis == "__Rekomendasi__":
     """)
     st.subheader("Insights")
     st.markdown("""
-        1. Pemulihan Pasca Pandemi: Pasca pandemi, terjadi kenaikan harga yang mencerminkan pemulihan ekonomi. Hal ini menunjukkan perlunya kebijakan yang mendukung pemulihan sektor pertanian dan pangan untuk memastikan ketersediaan dan keterjangkauan pangan bagi masyarakat
-        2. Strategi Pengendalian Harga: Pemerintah harus mempertimbangkan strategi pengendalian harga dan stabilisasi pasar, termasuk cadangan pangan strategis dan intervensi pasar bila perlu
-        3. Penelitian dan Pengembangan: Investasi dalam penelitian dan pengembangan sektor pertanian sangat diperlukan untuk meningkatkan produktivitas dan efisiensi, yang pada akhirnya akan membantu menstabilkan harga dan mendorong kesejahteraan masyarakat
+        1. Fluktuasi Harga Antarprovinsi: Data menunjukkan fluktuasi harga signifikan untuk beras, gula, dan telur antarprovinsi dari tahun 2019 hingga 2023, mengungkap disparitas harga nasional. 
+        2. Dinamika Harga Spesifik Provinsi: DKI Jakarta menunjukkan harga tertinggi, mencerminkan biaya hidup dan permintaan pasar yang tinggi diikuti Bali sebagai provinsi karakteristik wisata. Jawa Timur sering memiliki harga terendah, berkat peranannya sebagai pusat produksi. Sementara itu, Papua yang mewakili provinsi terpencil lainnya mengalami harga tinggi, terutama untuk telur, yang menunjukkan tantangan logistik dan biaya transportasi yang lebih tinggi.
+        3. Anaisis Tren Harga Berdasarkan Komoditas: Beras cenderung stabil dengan peningkatan di beberapa provinsi, gula menunjukkan fluktuasi lebih signifikan dengan tren kenaikan nasional, dan telur memiliki tren kenaikan harga yang paling tajam.
+        4. Pengaruh Musim Panen dan Siklus Produksi: Fluktuasi harga selama musim panen terkait dengan siklus produksi dan pasokan. Penurunan harga biasanya terjadi saat panen, menunjukkan pentingnya manajemen pasokan dan permintaan dalam menstabilkan harga pangan.
+        5. Dampak Pandemi COVID-19: Pandemi menyebabkan gangguan pada rantai pasokan dan distribusi, mengakibatkan peningkatan harga dan memperburuk disparitas harga. Analisis tren perubahan persentase harga mengungkapkan pengaruh signifikan pandemi terhadap dinamika harga pangan.
     """)
 
     st.subheader("Rekomendasi Nasional")
