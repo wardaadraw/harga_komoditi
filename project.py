@@ -39,7 +39,7 @@ if analysis == "__Disparitas Harga Nasional__":
     logistik, dan kebijakan lokal mempengaruhi harga pangan, memberikan kita wawasan tentang tantangan dan peluang 
     dalam pemerataan akses pangan. Pemilihan ketiga jenis pangan tersebut dikarenakan :
     1. Beras : menjadi pokok kebutuhan sehari-hari'
-    2. Telur : bahasn pangan serba guna
+    2. Telur : bahan pangan serba guna
     3. Gula  : pemanis kehidupan 
     """)
 
@@ -183,9 +183,9 @@ if analysis == "__Tren Harga Musim Panen__":
 
     st.markdown(
         """
-        * Harga beras menunjukkan stabilitas dengan fluktuasi yang lebih rendah
-        * Harga gula mengalami lonjakan signifikan pada tahun 2021 diikuti oleh penurunan
-        * Harga telur terus meningkat, menunjukkan kemungkinan permintaan atau kenaikan biaya yang berkelanjutan
+        * Harga beras pada musim panen menunjukkan penurunan harga yang tidak terlalu signifikan atau dibawah 5% penurunannya, kecuali tahun 2020 menuju 2021 mengalami penurunan drastis hingga >40%, namun harga mulai kembali ke normal tahun 2021 menuju 2022.
+        * Harga gula pada musim giling gula tebu tidak menunjukkan penurunan selama 5 tahun terakhir, bahkan sempat mengalami kenaikan harga dari harga normal gula.
+        * Harga telur pada tahun baru mengalami fluktuasi dan harganya tidak pernah lebih rendah dari harga normal telur.
         """
         )
     
@@ -211,9 +211,9 @@ if analysis == "__Tren Harga Musim Panen__":
 
     st.markdown(
     """
-    * Provinsi seperti Papua mengalami fluktuasi harga yang lebih besar, yang mungkin dipengaruhi oleh faktor geografis dan tantangan logistik
-    * DKI Jakarta dan Bali, dengan karakteristik urban dan wisata, menunjukkan kenaikan harga untuk Gula dan Telur, yang bisa dipengaruhi oleh dinamika permintaan yang tinggi
-    * Jawa Timur menunjukkan indikasi stabilitas harga yang lebih baik, yang mungkin mencerminkan kondisi produksi yang konsisten dan kebijakan lokal yang efektif dalam mengelola fluktuasi pasar
+    * Harga beras di keempat provinsi cukup terpengaruhi oleh musim panen yang ditunjukkan dengan adanya penurunan harga dibawah 0 mulai dari 2019 menuju 2020 hingga 2023. Namun keempatnya tidak memiliki perbedaan signifikan terkait tren harga beras pada saat musim panen beras, tetapi terlihat Bali menonjol dengan harga tertinggi dari tahun 2021 hingga pertengahan 2023.
+    * Secara garis besar, pada saat musim panen keempat prvinsi tidak mengalami penurunan yang berarti terkait harga gula. Papua mendominasi harga gula terendah 5 tahun terakhir (2019-2023) selama musim panen dan diikuti jawa timur, sedangkan DKI Jakarta dan Bali mendominasi pada harga tinggi gula
+    * Selama 5 tahun terakhir, Papua mendominasi harga telur terendah dari provinsi lain kecuali 2023, sedangkan jakarta dan bali mendominasi di harga tinggi, serta Jawa Timur berada pada posisi ke dua di harga terendah.
     """
     )
 
@@ -295,7 +295,7 @@ if analysis == "__Rekomendasi__":
         1. Fluktuasi Harga Antarprovinsi: Data menunjukkan fluktuasi harga signifikan untuk beras, gula, dan telur antarprovinsi dari tahun 2019 hingga 2023, mengungkap disparitas harga nasional.
         2. Analisis Tren Harga Berdasarkan Komoditas: Harga pangan beras, gula, dan telur yang menengah ke bawah didominasi oleh wilayah Indonesia bagian barat, sedangkan harga tinggi didominasi oleh Indoenesia timur dan beberapa barat khususnya Papua. 
         3. Dinamika Harga Spesifik Provinsi: DKI Jakarta secara konsisten mencatatkan harga tertinggi pada pangan Beras, mencerminkan biaya hidup dan permintaan pasar yang tinggi diikuti Bali sebagai provinsi karakteristik wisata. Jawa Timur sering memiliki harga terendah, berkat peranannya sebagai pusat produksi. Sementara itu, Papua yang mewakili provinsi terpencil lainnya mengalami harga tinggi, terutama untuk telur dan gula, yang menunjukkan tantangan logistik dan biaya transportasi yang lebih tinggi.
-        4. Pengaruh Musim Panen dan Siklus Produksi: Seacara nasional, ketiga jenis pangan mengalami fluktuasi tinggi pada tahun 2021-2022 dan kembali pulih menuju 2023. Pada provinsi Provinsi mengalami fluktuasi paling tinggi khususnya Beras diikuti DKI Jakarta dan Bali. Lalu Provinsi Jawa Timur memiliki stabilitas yang lebih baik.
+        4. Pengaruh Musim Panen dan Siklus Produksi: Secara nasional, hanya pangan beras yang menunjukkan penurunan harga di musim panennya, sedangkan gula dan telur tidak mengalami penurunan harga di bawah rata-rata harga masing-masing pangan. Secara khusus, provinsi Bali dan DKI Jakarta konsisten memiliki harga tertinggi di setiap pangan diikuti jawa timur dan papua yang mendominasi harga rendah untuk gula dan telur.
         5. Dampak Pandemi COVID-19: Harga Beras dan Telur mengalami penurunan pada saat menuju kondisi covid-19 dan naik drastis saat kondisi pasca atau pemulihan dari pandemi covid-19 baik secara nasional maupun keempat provinsi khusus. Sedangkan harga gula terus mengalami kenaikan seiring berjalannya waktu secara nasional maupun keempat provinsi khusus.
     """)
 
